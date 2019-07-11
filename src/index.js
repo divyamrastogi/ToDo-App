@@ -11,6 +11,13 @@ function App() {
       todoList: [
         {
           label: "Deeksha's Life Insurance",
+          done: false,
+          todoList: [{
+            label: "Explore ICICI Prudential",
+            done: false
+          }]
+        }, {
+          label: "Deeksha's Health Insurance",
           done: false
         }
       ]
@@ -20,8 +27,17 @@ function App() {
       done: false
     }
   ]);
-  function onToggle(index) {
-    todoList[index].done = !todoList[index].done;
+  function onToggle(indexes = []) {
+    let list = todoList;
+    indexes.forEach((i, index) => {
+      if (index === indexes.length - 1) {
+        const todo = list[i];
+        todo.done = !todo.done;
+      } else {
+        list = list[i].todoList;
+      }
+    });
+    
     setTodoList([...todoList]);
   }
   return (

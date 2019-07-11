@@ -1,16 +1,16 @@
 import React from "react";
 import TodoList from "../TodoList";
 import "./Todo.scss";
-import { guidGenerator } from "../../utils";
 
 export default function Todo({
-  item: { id = guidGenerator(), label, done, todoList },
+  item: { label, done, todoList },
+  id,
   index,
   onToggle
 }) {
   return (
-    <div>
-      <label className="todo" for={id}>
+    <div className="todo">
+      <label htmlFor={id}>
         <input
           id={id}
           type="checkbox"

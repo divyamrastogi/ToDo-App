@@ -1,7 +1,11 @@
-label.todo {
-  display: block;
-  input[type=checkbox] {
-    margin-right: 0.5em;
+.todo {
+  .todo {
+    margin-left: 1em;
+  }
+  label { 
+    input[type=checkbox] {
+      margin-right: 0.5em;
+    }
   }
 }
 
