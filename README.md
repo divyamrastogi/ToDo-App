@@ -1,5 +1,7 @@
 # ToDo App
 
+Such ToDo, much to do. Lets ge a roadmapo for this baby.
+
 A simple ToDo App built using React.
 
 Features 
