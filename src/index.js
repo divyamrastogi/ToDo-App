@@ -10,14 +10,14 @@ function App() {
       done: false,
       todoList: [
         {
-          label: "Deeksha's Life Insurance",
+          label: "A's Life Insurance",
           done: false,
           todoList: [{
             label: "Explore ICICI Prudential",
             done: false
           }]
         }, {
-          label: "Deeksha's Health Insurance",
+          label: "A's Health Insurance",
           done: false
         }
       ]
